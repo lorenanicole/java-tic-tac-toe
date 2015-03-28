@@ -1,5 +1,6 @@
 package com.projecttechteen;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -9,12 +10,16 @@ import java.util.Scanner;
  */
 public class TicTacToe {
     Player player;
+    ComputerPlayer computerPlayer;
     Board board;
     boolean completed;
+    List<Integer> numsCalled;
+    String winner;
 
     public TicTacToe() {
         this.board = new Board();
         this.completed = false;
+        this.numsCalled = new ArrayList<Integer>();
     }
 
     public Boolean isCompleted() {
@@ -26,6 +31,13 @@ public class TicTacToe {
                 || this.board.verticalTicTacToe(this.player.getSymbol())
                 || this.board.diagonalTicTacToe(this.player.getSymbol())) {
             this.completed = true;
+            this.winner = this.player.getName();
+        }
+        if (this.board.horizontalTicTacToe(this.computerPlayer.getSymbol())
+                || this.board.verticalTicTacToe(this.computerPlayer.getSymbol())
+                || this.board.diagonalTicTacToe(this.computerPlayer.getSymbol())) {
+            this.completed = true;
+            this.winner = this.computerPlayer.getName();
         }
     }
 
@@ -45,18 +57,44 @@ public class TicTacToe {
         }
 
         this.player = new Player(playerName, playerSymbol);
+        for (String option : options) {
+            if (!option.equals(playerSymbol)) {
+                this.computerPlayer = new ComputerPlayer(option);
+            }
+        }
+        System.out.println(board.drawBoard());
     }
 
     public void play() {
-        System.out.println(board.drawBoard());
         Scanner in = new Scanner(System.in);
+
         System.out.println("What slot do you want to put a value into?. Use number 0 to 8.");
         Integer numSlot = in.nextInt();
         board.placeSymbol(numSlot, player.getSymbol());
         System.out.println(board.drawBoard());
+
+        numsCalled.add(numSlot);
+        int computerSlot = computerPlayer.selectSlot(numsCalled);
+        numsCalled.add(computerSlot);
+        board.placeSymbol(computerSlot, computerPlayer.getSymbol());
+        System.out.println("Computer's turn ... ");
+
+        try{
+            Thread.sleep(500);}
+        catch(InterruptedException e){
+            System.out.println(e);
+        }
+        System.out.println(board.drawBoard());
+
+        try{
+            Thread.sleep(500);}
+        catch(InterruptedException e){
+            System.out.println(e);
+        }
+
         checkBoard();
         if (isCompleted()) {
-            System.out.println("Congrats - you won!");
+            System.out.println("Congrats - " + this.winner + " won!");
         }
     }
 }
