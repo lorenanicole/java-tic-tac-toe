@@ -32,22 +32,24 @@ public class Board {
     }
 
     public void placeSymbol(int slotNum, String symbol) {
+        System.out.println("here is slot num: " + slotNum + symbol);
         board[slotNum] = symbol;
     }
 
     public boolean horizontalTicTacToe(String symbol) {
         List<String> rowOne = new ArrayList<String>();
         List<String> rowTwo = new ArrayList<String>();
-    List<String> rowThree = new ArrayList<String>();
-    for (int i = 0; i < (board.length / 3); i++) {
-        rowOne.add(board[i]);
-        rowTwo.add(board[i + 2]);
-        rowThree.add(board[i + 5]);
+        List<String> rowThree = new ArrayList<String>();
+        for (int i = 0; i < (board.length / 3); i++) {
+            rowOne.add(board[i]);
+            rowTwo.add(board[i + 3]);
+            rowThree.add(board[i + 6]);
+        }
+
+        return StringUtils.join(rowOne, "").equals(symbol + symbol + symbol)
+        || StringUtils.join(rowTwo, "").equals(symbol + symbol + symbol)
+        || StringUtils.join(rowThree, "").equals(symbol + symbol + symbol);
     }
-    return StringUtils.join(rowOne, "").equals(symbol + symbol + symbol)
-    || StringUtils.join(rowTwo, "").equals(symbol + symbol + symbol)
-    || StringUtils.join(rowThree, "").equals(symbol + symbol + symbol);
-}
 
     public boolean verticalTicTacToe(String symbol) {
         List<String> colOne = new ArrayList<String>();

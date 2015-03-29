@@ -6,10 +6,12 @@ package com.projecttechteen;
 public class Player {
     String name;
     String symbol;
+    int playerNumber;
 
-    public Player(String name, String symbol) {
+    public Player(String name, String symbol, int playerNumber) {
         this.name = name;
         this.symbol = symbol;
+        this.playerNumber = playerNumber;
     }
 
     public String getSymbol() {
@@ -18,5 +20,9 @@ public class Player {
 
     public String getName() {
         return this.name;
+    }
+
+    public int getPlayerNumber() {
+        return this.playerNumber;
     }
 }
