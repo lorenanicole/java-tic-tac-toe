@@ -24,7 +24,7 @@
     <favorites_list name="tic-tac-toe" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42363638">
+    <splitter split-orientation="horizontal" split-proportion="0.29">
       <split-first>
         <leaf>
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
@@ -37,31 +37,34 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1039" max-vertical-offset="1500">
-                  <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.3253796" vertical-offset="420" max-vertical-offset="1560">
+                  <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#977#985#0" expanded="true" />
-                    <element signature="e#1032#1040#0" expanded="true" />
-                    <element signature="e#1089#1097#0" expanded="true" />
-                    <element signature="e#1609#1617#0" expanded="true" />
-                    <element signature="e#1664#1672#0" expanded="true" />
-                    <element signature="e#1721#1729#0" expanded="true" />
-                    <element signature="e#2454#2462#0" expanded="true" />
-                    <element signature="e#2510#2518#0" expanded="true" />
+                    <element signature="e#185#186#0" expanded="true" />
+                    <element signature="e#227#228#0" expanded="true" />
+                    <element signature="e#908#909#0" expanded="true" />
+                    <element signature="e#1010#1018#0" expanded="true" />
+                    <element signature="e#1065#1073#0" expanded="true" />
+                    <element signature="e#1122#1130#0" expanded="true" />
+                    <element signature="e#1642#1650#0" expanded="true" />
+                    <element signature="e#1697#1705#0" expanded="true" />
+                    <element signature="e#1754#1762#0" expanded="true" />
+                    <element signature="e#2487#2495#0" expanded="true" />
+                    <element signature="e#2543#2551#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Player.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8518519" vertical-offset="150" max-vertical-offset="645">
-                  <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+                <state vertical-scroll-proportion="-4.017857" vertical-offset="240" max-vertical-offset="645">
+                  <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
                   <folding>
                     <element signature="e#384#385#0" expanded="true" />
                     <element signature="e#418#419#0" expanded="true" />
@@ -81,11 +84,11 @@
           <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/TicTacToe.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7483731" vertical-offset="0" max-vertical-offset="2400">
-                  <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+                <state vertical-scroll-proportion="-2.4164858" vertical-offset="1984" max-vertical-offset="2445">
+                  <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
                   <folding>
-                    <element signature="e#5098#5099#0" expanded="true" />
-                    <element signature="e#5130#5131#0" expanded="true" />
+                    <element signature="e#5061#5062#0" expanded="true" />
+                    <element signature="e#5093#5094#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -112,11 +115,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/projecttechteen/Computer.java" />
-        <option value="$PROJECT_DIR$/src/com/projecttechteen/Board.java" />
         <option value="$PROJECT_DIR$/src/com/projecttechteen/GameState.java" />
         <option value="$PROJECT_DIR$/src/com/projecttechteen/Main.java" />
         <option value="$PROJECT_DIR$/src/com/projecttechteen/ComputerPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/projecttechteen/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/projecttechteen/Board.java" />
         <option value="$PROJECT_DIR$/src/com/projecttechteen/TicTacToe.java" />
       </list>
     </option>
@@ -428,32 +431,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1114" max-vertical-offset="1500">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#977#985#0" expanded="true" />
-            <element signature="e#1032#1040#0" expanded="true" />
-            <element signature="e#1089#1097#0" expanded="true" />
-            <element signature="e#1609#1617#0" expanded="true" />
-            <element signature="e#1664#1672#0" expanded="true" />
-            <element signature="e#1721#1729#0" expanded="true" />
-            <element signature="e#2454#2462#0" expanded="true" />
-            <element signature="e#2510#2518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/ComputerPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -465,10 +442,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8518519" vertical-offset="150" max-vertical-offset="645">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state vertical-scroll-proportion="-4.017857" vertical-offset="240" max-vertical-offset="645">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="e#384#385#0" expanded="true" />
             <element signature="e#418#419#0" expanded="true" />
@@ -480,13 +465,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3253796" vertical-offset="420" max-vertical-offset="1560">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#1010#1018#0" expanded="true" />
+            <element signature="e#1065#1073#0" expanded="true" />
+            <element signature="e#1122#1130#0" expanded="true" />
+            <element signature="e#1642#1650#0" expanded="true" />
+            <element signature="e#1697#1705#0" expanded="true" />
+            <element signature="e#1754#1762#0" expanded="true" />
+            <element signature="e#2487#2495#0" expanded="true" />
+            <element signature="e#2543#2551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/projecttechteen/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7483731" vertical-offset="0" max-vertical-offset="2400">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state vertical-scroll-proportion="-2.4164858" vertical-offset="1984" max-vertical-offset="2445">
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding>
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5130#5131#0" expanded="true" />
+            <element signature="e#5061#5062#0" expanded="true" />
+            <element signature="e#5093#5094#0" expanded="true" />
           </folding>
         </state>
       </provider>

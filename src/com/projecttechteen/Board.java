@@ -10,10 +10,15 @@ public class Board {
     String[] board;
 
     public Board() {
-        this.board = new String[9];
-        for (int i=0; i < board.length; i++) {
-            this.board[i] = null;
+        this.board = createBoard();
+    }
+
+    public String[] createBoard() {
+        String[] board = new String[9];
+        for (int i = 0; i < board.length; i++) {
+            board[i] = null;
         }
+        return board;
     }
 
     public String drawBoard() {
@@ -32,7 +37,6 @@ public class Board {
     }
 
     public void placeSymbol(int slotNum, String symbol) {
-        System.out.println("here is slot num: " + slotNum + symbol);
         board[slotNum] = symbol;
     }
 
