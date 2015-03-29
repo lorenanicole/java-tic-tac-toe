@@ -84,31 +84,21 @@ public class TicTacToe {
     }
 
     public void play() {
-        Scanner in = new Scanner(System.in);
         Integer position;
-        if (currentPlayer instanceof ComputerPlayer) {
-            position = computerPlayer.selectPosition();
-            boolean positionFilled = positionsMarked.contains(position);
+        position = currentPlayer.selectPosition();
+        boolean positionFilled = positionsMarked.contains(position);
 
-            while(positionFilled) {
-                position = computerPlayer.selectPosition();
-                positionFilled = positionsMarked.contains(position);
-            }
-        } else {
-            System.out.println("What slot do you want to put a value into?. Use number 0 to 8.");
-            position = in.nextInt();
+        while(positionFilled) {
+            position = currentPlayer.selectPosition();
+            positionFilled = positionsMarked.contains(position);
         }
+
         board.placeSymbol(position, currentPlayer.getSymbol());
-        System.out.println(board.drawBoard());
         positionsMarked.add(position);
         setCurrentPlayer();
         checkBoard();
         determineBoardFilled();
         processGameState();
-
-        if (gameState != GameState.CONTINUE) {
-            System.out.println(displayFinalMessage());
-        }
 
         try{
             System.out.println(board.drawBoard());
@@ -116,10 +106,14 @@ public class TicTacToe {
         catch(InterruptedException e){
             System.out.println(e);
         }
+
+        if (gameState != GameState.CONTINUE) {
+            System.out.println(displayFinalMessage());
+        }
     }
 
     private void processGameState() {
-        if (completed && winner == null) {
+        if (completed && winner.equals("")) {
             gameState = GameState.DRAW;
         } else if (winner.equals(computerPlayer.getName())) {
             gameState = GameState.COMPUTER_WIN;
